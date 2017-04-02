@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <title>my weather app</title>
+</head>
+<body>
+  <section class="main">
+  <div class="container">
+    <h1>weather app 2017</h1>
+    <div class="inner">
+      <form>
+        <input type="text" placeholder="city" name="city" id="city">
+        <input type="text" placeholder="country" name="country" id="country">
+        <input type="button" class="button" value="get weather" onclick="getWeather()">
+      </form>
+      <div id="display" class="displayWeather">
+<!--        your weather data and images goes in here -->
+            <img src="" id="image" alt="weather icon">
+            <p id="temperature"></p>
+            <p id="weather"></p>
+            <p id="location"></p>
+            <p id="description"></p>
+
+            <p id="attribution" style="position: absolute; bottom: 0; margin-bottom: 3rem;">icons designed by Darius Dan from Flaticon [<a href="http://www.flaticon.com/packs/weather-icon-set/">link</a>]</p>
+          
+      </div>
+    </div>
+  </div>
+  </section>
+    
+  <script src="app.js"></script>
+</body>
+</html>
